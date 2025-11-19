@@ -1,0 +1,17 @@
+package Automation;
+
+public class GreatestNumber {
+
+	    public static void main(String[] args) {
+	        int a = 10;
+	        int b = 23;
+	        int c = 5;	       
+	       if (a >= b && a >= c) {
+	            System.out.println("The greatest number is a: " + a);
+	        } else if(b >= a && b >= c) {
+	            System.out.println("The greatest number is b: " + b);
+	        } else {
+	            System.out.println("The greatest number is c: " + c);
+	        }
+	    }
+	}
