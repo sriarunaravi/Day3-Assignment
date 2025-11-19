@@ -1,0 +1,49 @@
+package Automation;
+
+import java.util.Scanner;
+
+public class Calculator {
+	
+	    public static void main(String[] args) {
+	      
+	        Scanner scanner = new Scanner(System.in);	      
+	        System.out.print("Enter the first number: ");
+	        double a = scanner.nextDouble();
+	        System.out.print("Enter the second number: ");
+	        double b= scanner.nextDouble();	        
+	        System.out.println("Choose an operation:");
+	        System.out.println("1. Add");
+	        System.out.println("2. Subtract");
+	        System.out.println("3. Multiply");
+	        System.out.println("4. Divide");	   
+	        System.out.print("Enter The Operation Choice Between 1 to 4: ");
+	        int choice = scanner.nextInt();
+	        double answer;
+	        switch (choice) {
+	            case 1:
+	            	answer =a+ b;
+	                System.out.println("The Answer Is: " + answer);
+	                break;
+	            case 2:
+	            	answer= a - b;
+	                System.out.println("The Answer Is: " + answer);
+	                break;
+	            case 3:
+	            	answer = a * b;
+	                System.out.println("The Answer Is: " + answer);
+	                break;
+	            case 4:
+	                if (b != 0) {
+	                	answer = a/ b;
+	                    System.out.println("The Answer Is " + answer);
+	                } else {
+	                    System.out.println("Division by zero is not allowed.");
+	                }
+	                break;
+	            default:
+	                System.out.println("Choose a Valid Option");
+	                break;
+	        }
+	        scanner.close();
+	    }
+	}
